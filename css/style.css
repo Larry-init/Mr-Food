@@ -1,0 +1,153 @@
+/* General */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'montserrat', sans-serif;
+    font-size: 12px;
+    line-height: 1.6;
+}
+.container {
+    width: 60%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.hero img {
+    width: 100%;
+    height: 600px;
+    margin: 0;
+    padding: 0;
+
+}
+.list ul {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+}
+ul.menulist {
+    display: flex;
+    flex-direction: column;
+}
+.list li {
+    list-style: none;
+    padding: 14px; 
+}
+.list li a {
+    text-decoration: none;
+    color: #fff;
+}
+.list li a:hover {
+    color: #ff8400;
+}
+.list span {
+    color: #ff8400;
+}
+.head {
+    position: relative;
+}
+.menu {
+    position: absolute;
+    top: 0;
+    background-color: rgba(225,225,225,0.5);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+/* logo */
+.logo {
+    padding: 14px 18px;
+}
+.logo img{
+    height: 18px;
+    width: auto;
+}
+.display {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -moz-transform: translate(50%, 50%);
+    text-align: center;
+}
+.display h1, .display h2, .display p {
+    color: #fff;
+    font-size: 25px;
+}
+.display h1 {
+    font-family: 'Indie Flower', cursive;
+    font-size: 45px;
+}
+.display p {
+    font-size: 18px;
+}
+.display button {
+    outline: none;
+    border: none;
+    padding: 16px 50px;
+    color: #fff;
+    font-size: 16px;
+    background-color: #ff8400;
+    margin: 30px;
+}
+.display button:hover {
+    background-color: rgba(235, 140, 38);
+}
+
+/* dropdown */
+.openMenu .dropdown {
+    opacity: 0;
+}
+.openMenu:hover .dropdown {
+    opacity: 1;
+}
+.dropdown, .contact {
+    margin-top:20px;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+}
+.menulist li {
+    padding: 5px;
+}
+.contact {
+    position: absolute;
+}
+
+/* Awards */
+.excellence, .food, .love, .satisfaction, .recognitions {
+    display: flex;
+    justify-content: space-around;
+}
+.recognitions {
+    margin-top: 20px;
+}
+.recognitions i {
+    color: #beb2b5;
+}
+.excellence:hover .first i {
+    color: green;
+}
+.food:hover .second i {
+    color: red;
+}
+.love:hover .third i {
+    color: red;
+}
+.satisfaction:hover .fourth i {
+    color: green;
+}
+.star i {
+    color: #FF9529;
+}
+.excellence, .food, .love, .satisfaction {
+    padding-bottom: 20px;
+    border-bottom: solid rgba(225,225,225,0.4) 2px;
+}
+.excellence:hover, .food:hover, .love:hover, .satisfaction:hover {
+    transition: border 1s ease;
+    border-bottom: solid #ff8400 2px;
+}
