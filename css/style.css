@@ -1,6 +1,8 @@
 /* General */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -216,6 +218,7 @@ ul.menulist {
 }
 .rice:hover img, .snacks:hover img, .drinks:hover img {
     animation: pulse 0.5s linear;
+    filter: brightness(70%);
 }
 @keyframes pulse {
     0% {transform: rotate(0deg) scale(.99) }
@@ -255,4 +258,133 @@ ul.menulist {
 }
 .review i {
     color:rgba(255,132,0);
+}
+
+/* Chief's recommendation */
+.recommend {
+    display: flex;
+}
+.recommend img {
+    height: 400px;
+    width: 100%;
+}
+.aOne:hover img, .bOne:hover img, .cOne:hover img, .zOne:hover img {
+    filter:brightness(70%);
+}
+.chef {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    margin: 60px 0 30px 0;
+}
+.aOne, .bOne, .cOne, .zOne {
+    position: relative;
+}
+.aOne h4, .bOne h4, .cOne h4, .zOne h4 {
+    position: absolute;
+    top: 16px;
+    left: 20px;
+    color: white;
+    background-color:rgba(255,132,0);
+    padding: 6px 15px;
+}
+.aOne p, .bOne p, .cOne p, .zOne p {
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.aOne span, .bOne span, .cOne span, .zOne span {
+    color:rgba(255,132,0);
+}
+
+/* Book Now */
+.book {
+    position:relative;
+    text-align: center;
+}
+.book img {
+    margin-top: 40px;
+    height: 500px;
+    width: 100%;
+    display: block;
+}
+.order {
+    font-family:'Open Sans', sans-serif;
+    padding: 30px 50px;
+    width: 500px;
+    background-color: rgba(255,255,255, 0.7);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+.order h1 {
+    color:rgba(255,132,0);
+
+}
+.order p {
+    font-size: 16px;
+}
+.order button {
+    color: white;
+    background-color:rgba(255,132,0);
+    padding: 10px 16px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    margin-top: 30px;
+}
+.order button:hover {
+    background-color:rgba(255,132,0, 0.9);
+}
+.mySub {
+    background-color:rgba(255,132,0);
+}
+.subscribe {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 5px 10px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.subOne, .subTwo {
+    padding: 40px;
+}
+.subOne {
+    text-align: left;
+}
+.subTwo button {
+    background-color: white;
+    color:rgba(255,132,0);
+    outline: none;
+    border:none;
+    cursor: pointer;
+    padding: 10px 16px;
+    margin: 0;
+}
+.subTwo input {
+    padding: 10px 25px;
+    margin:0;
+    outline: none;
+    border: none;
+    background-color: rgba(219, 124, 20);
+}
+.subscribe input::placeholder {
+    color: white;
+}
+
+/* Footer */
+.myFooter {
+    background-color: #343434;
+    color: white;
+}
+.footer {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+.footer i {
+    padding: 10px;
+}
+.footer .about {
+    width: 50%;
 }
