@@ -349,6 +349,9 @@ ul.menulist {
 .subOne, .subTwo {
     padding: 40px;
 }
+.subTwo {
+    display: flex;
+}
 .subOne {
     text-align: left;
 }
@@ -379,7 +382,7 @@ ul.menulist {
 }
 .footer {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     padding: 50px;
 }
 .footer i {
