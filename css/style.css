@@ -229,7 +229,7 @@ ul.menulist {
     bottom: 0;
     color: white;
     background-color:rgba(255,132,0);
-    width: 527.62px;
+    width: 100%;
     padding: 20px 0;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -261,7 +261,7 @@ ul.menulist {
 }
 
 /* Chief's recommendation */
-.recommend {
+.recommend, .recd {
     display: flex;
 }
 .recommend img {
@@ -364,6 +364,9 @@ ul.menulist {
     padding: 10px 16px;
     margin: 0;
 }
+.subTwo button:hover {
+    background-color: #343434;
+}
 .subTwo input {
     padding: 10px 25px;
     margin:0;
@@ -390,4 +393,75 @@ ul.menulist {
 }
 .footer .about {
     width: 50%;
+}
+@media(max-width: 1200px){
+    .container{
+        width: 100%;
+    }
+    .recd {
+        display: flex;
+        flex-direction: column;
+    }
+    .rice h1, .snacks h1, .drinks h1 {
+        width: 100%;
+     }
+    .subscribe {
+        flex-direction: column;
+        align-items: center;
+    }
+    .subOne {
+        width: 400px;
+        padding-bottom: 0;
+    }
+    .excellence, .food, .love, .satisfaction, .recognitions {
+        padding: 0 30px;
+    }
+}
+@media(max-width: 700px){
+    .recognitions, .remark, .displayPix, .review, .recd, .recommend, .footer {
+        flex-direction: column;
+    }
+    .food, .love, .satisfaction {
+        padding-top: 40px;
+    }
+    .excellence, .food, .love, .satisfaction {
+        justify-content: left;
+    }
+    .displayPix img {
+        height: 250px;
+        width: 100%;
+    }
+    .chef {
+        margin-top: 0;
+    }
+    .review {
+        width: 60%;
+        margin: auto;
+    }
+    .recommend img {
+        height: 250px;
+        width: 100%;
+    }
+    .book img {
+        margin-top: 20px;
+        height: 400px;
+        width: 100%;
+    }
+    .order {
+        font-family:'Open Sans', sans-serif;
+        padding: 10px 30px;
+        width: 70%;
+        background-color: rgba(255,255,255, 0.5);
+    }
+    .subOne, .subTwo {
+        padding: 10px;
+    }
+    .footer {
+        justify-content: center;
+        text-align: center;
+        align-items:center;
+    }
+    .footer .about {
+        padding: 20px 0px;
+    }
 }
