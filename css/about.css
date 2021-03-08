@@ -10,9 +10,10 @@
     box-sizing: border-box;
 }
 body {
-    font-family: 'montserrat', sans-serif;
-    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
     line-height: 1.6;
+    color: #333;
 }
 .container {
     width: 60%;
@@ -23,6 +24,7 @@ body {
     background-color: #333;
 }
 .menu {
+    font-size: 12px;
     padding: 20px 0;
 }
 .list ul {
@@ -47,8 +49,7 @@ ul.menulist {
 .list span {
     color: #ff8400;
 }
-.menu {
-    width: 100%;
+.menu .container {
     display: flex;
     justify-content: space-between;
 }
@@ -84,13 +85,144 @@ ul.menulist {
 .coverPix {
     text-align: center;
 }
-.coverPix p img {
+.coverPix p {
     font-family: 'Roboto Mono', monospace;
+}
+.coverPix img {
+    width: 100%;
+    height: 400px;
 }
 .coverPix span {
     color:#ff8400;
 }
 .since {
-    width: 500px;
+    margin: auto;
+    width: 700px;
     font-family: Arial, Helvetica, sans-serif;
+    color: #343434;
+}
+.since p {
+    font-size: 18px;
+}
+.since h1 {
+    font-size: 26px;
+}
+
+/* Awards */
+.excellence, .food, .love, .satisfaction, .recognitions {
+    display: flex;
+    justify-content: center;
+    padding: 0 20px;
+}
+.recognitions {
+    margin-top: 60px;
+}
+.recognitions i {
+    color: #beb2b5;
+}
+.excellence:hover .first i {
+    color: green;
+}
+.food:hover .second i {
+    color: red;
+}
+.love:hover .third i {
+    color: red;
+}
+.satisfaction:hover .fourth i {
+    color: green;
+}
+.star i {
+    color: #FF9529;
+}
+.excellence, .food, .love, .satisfaction {
+    padding-bottom: 20px;
+    border-bottom: solid rgba(225,225,225,0.4) 2px;
+}
+.excellence:hover, .food:hover, .love:hover, .satisfaction:hover {
+    transition: border 1s ease;
+    border-bottom: solid #ff8400 2px;
+}
+.invite img {
+    width: 100%;
+    height: auto;
+}
+
+.invite p {
+    width: 700px;
+    margin: auto;
+    padding: 40px;
+    font-size: 18px;
+}
+.team p{
+    margin-bottom: 30px;s
+}
+/* Chef */
+.chef {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+/* Footer */
+.myFooter {
+    background-color: #343434;
+    color: white;
+}
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+}
+.footer i {
+    padding: 10px;
+    color:rgba(255,132,0);
+}
+.footer .about {
+    width: 50%;
+}
+
+@media(max-width: 1200px){
+    .container{
+        width: 100%;
+    }
+    .menu .container {
+        padding-left: 10%;
+        flex-direction: column;
+        margin:auto;
+    }
+    .excellence, .food, .love, .satisfaction, .recognitions {
+        padding: 0 30px;
+    }
+}
+@media(max-width: 700px){
+    .recognitions, .remark, .displayPix, .review, .recd, .recommend, .footer {
+        flex-direction: column;
+    }
+    .food, .love, .satisfaction {
+        padding-top: 40px;
+    }
+    .excellence, .food, .love, .satisfaction {
+        justify-content: left;
+    }
+    .displayPix img {
+        height: 250px;
+        width: 100%;
+    }
+    .chef {
+        margin-top: 0;
+    }
+    .review {
+        width: 60%;
+        margin: auto;
+    }
+    .footer {
+        justify-content: center;
+        text-align: center;
+        align-items:center;
+    }
+    .footer .about {
+        padding: 20px 0px;
+    }
 }

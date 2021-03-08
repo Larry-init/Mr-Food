@@ -390,6 +390,7 @@ ul.menulist {
 }
 .footer i {
     padding: 10px;
+    color:rgba(255,132,0);
 }
 .footer .about {
     width: 50%;
@@ -397,6 +398,11 @@ ul.menulist {
 @media(max-width: 1200px){
     .container{
         width: 100%;
+    }
+    .menu {
+        padding-left: 10%;
+        flex-direction: column;
+        margin:auto;
     }
     .recd {
         display: flex;
