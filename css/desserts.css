@@ -1,4 +1,3 @@
-/* General */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&display=swap');
@@ -21,11 +20,9 @@ body {
     overflow: hidden;
 }
 .menu {
-    background-color: #333;
-}
-.menu {
     font-size: 12px;
     padding: 20px 0;
+    background-color: #333;
 }
 .list ul {
     font-family: Arial, Helvetica, sans-serif;
@@ -34,14 +31,17 @@ body {
 ul.menulist {
     display: flex;
     flex-direction: column;
+    overflow:visible;
 }
 .list li {
     list-style: none;
     padding: 14px; 
+    overflow:visible;
 }
 .list li a {
     text-decoration: none;
     color: #fff;
+    overflow:visible;
 }
 .list li a:hover {
     color: #ff8400;
@@ -81,124 +81,59 @@ ul.menulist {
 .contact {
     position: absolute;
 }
+
 /* First pix */
 .coverPix {
-    text-align: center;
+    text-align: left;
 }
 .coverPix p {
-    font-family: 'Roboto Mono', monospace;
-}
-.coverPix img {
-    width: 100%;
-    height: 400px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
 }
 .coverPix span {
     color:#ff8400;
 }
-.since {
-    margin: auto;
-    width: 700px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #343434;
+.local {
+    position: relative;
+    z-index: -1;
 }
-.since p {
+.localDishes {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     font-size: 18px;
+    color: white;
+    background-color:rgba(0, 0, 0, 0.6);
 }
-.since h1 {
-    font-size: 26px;
+.localDishes h1 {
+    padding: 10px;
+}
+.lcl {
+    margin: 50px auto 50px auto;
 }
 
-/* Awards */
-.excellence, .food, .love, .satisfaction, .recognitions {
-    display: flex;
-    justify-content: center;
-    padding: 0 20px;
-}
-.recognitions {
-    margin-top: 60px;
-}
-.recognitions i {
-    color: #beb2b5;
-}
-.excellence:hover .first i {
-    color: green;
-}
-.food:hover .second i {
-    color: red;
-}
-.love:hover .third i {
-    color: red;
-}
-.satisfaction:hover .fourth i {
-    color: green;
-}
-.star i {
-    color: #FF9529;
-}
-.excellence, .food, .love, .satisfaction {
-    padding-bottom: 20px;
-    border-bottom: solid rgba(225,225,225,0.4) 2px;
-}
-.excellence:hover, .food:hover, .love:hover, .satisfaction:hover {
-    transition: border 1s ease;
-    border-bottom: solid #ff8400 2px;
-}
-.invite img {
-    width: 100%;
-    height: auto;
-}
-
-.invite p {
-    width: 700px;
-    margin: auto;
-    padding: 40px;
-    font-size: 18px;
-}
-.team p{
-    margin-bottom: 30px;
-}
-/* Chef */
-.chef {
+/* Pricing and cost */
+.cost {
+    font-weight: 100;
     display: flex;
     justify-content: space-between;
+    padding: 10px;
+    color:rgba(0, 0, 0, 0.6);
 }
-.chef .cont {
-    width: 440px;
-    margin: auto;
+.cost h1 {
+    font-size: 15px;
 }
-.chef .font i {
-    padding: 20px 0 0 35px;
+.cost p {
+    font-size: 13px;
 }
-.chef .font i:first-child {
-    padding-left: 0;
+.cost span {
+    color: #ff8400;
+    float:right;
 }
-.recent {
-    margin: 50px 0 20px left;
-    padding: 20px 0;
-    border-top: 1px solid rgba(225,225,225,0.4);
-    border-bottom: 1px solid rgba(225,225,225,0.4);
-
+.costWidth {
+    width: 400px;
 }
-.recent h1, .recent h2 {
-    font-size: 16px;
-    padding: 5px 0 5px 0;
-}
-.recent a, .reserve a {
-    font-weight: 100;
-    text-decoration: none;
-    color:#ff8400;
-}
-.recent a:hover {
-    color: #343434;
-}
-.reserve a:hover {
-    color: #343434;
-}
-.reserve {
-    text-align:center;
-    padding: 30px 0;
-}
-
 /* Footer */
 .myFooter {
     background-color: #343434;
@@ -216,7 +151,6 @@ ul.menulist {
 .footer .about {
     width: 50%;
 }
-
 @media(max-width: 1200px){
     .container{
         width: 100%;
@@ -226,20 +160,8 @@ ul.menulist {
         flex-direction: column;
         margin:auto;
     }
-    .excellence, .food, .love, .satisfaction, .recognitions {
-        padding: 0 30px;
-    }
 }
 @media(max-width: 700px){
-    .recognitions, .remark, .displayPix, .review, .recd, .recommend, .footer {
-        flex-direction: column;
-    }
-    .food, .love, .satisfaction {
-        padding-top: 40px;
-    }
-    .excellence, .food, .love, .satisfaction {
-        justify-content: left;
-    }
     .displayPix img {
         height: 250px;
         width: 100%;
