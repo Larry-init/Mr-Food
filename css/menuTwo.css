@@ -116,6 +116,9 @@ ul.menulist {
     color:#ff8400;
     text-decoration: none;
 }
+.menuImg a:hover {
+    color:#343434;
+}
 .menuImg {
     padding:70px 0 70px 0;
     border-bottom:1px solid rgba(0, 0, 0, 0.1);
@@ -136,16 +139,21 @@ ul.menulist {
     margin-bottom: 80px;
 }
 .page h1:nth-child(3) {
-    float: right;
+    float: left;
+    color: #ff8400;
 }
 .page h1:nth-child(2):hover {
     color: #343434;
 }
 .page h1 {
     display: inline-block;
+    padding-right: 5px;
 }
 .page h1 a:hover {
     color: #ff8400;
+}
+.page h1:nth-child(3) a:hover {
+    color: #343434;
 }
 .page a {
     text-decoration: none;
