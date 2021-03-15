@@ -9,7 +9,7 @@
     <title>Mr Food | Desserts</title>
 </head>
 <body>
-    <header>
+    <header class="desktop">
         <div>
             <div class="menu">
                 <div class="container">
@@ -45,6 +45,56 @@
             </div>
         <div>
     </header>
+
+     <!-- Mobile version -->
+     <header class="mobile">
+        <div class="fixed">
+            <div class="menu">
+                <div class="container">
+                    <div class="logo"><img src="images/mrfood.png" alt=""></div>
+                    <div class="show">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                    <div class="noshow times">
+                        <i class="fas fa-times"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="container menu">
+                <div class="noList">
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html"><span>ABOUT</span></a></li>
+                        <li class="openMenu">
+                            <div class="flexMe">
+                                <div>
+                                    <a href="menu.html">MENU</a>
+                                </div>
+                                <div class="drop">
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                            </div>
+                            <div class="doNotDrop">
+                                <ul class="menulist">
+                                    <li><a href="localdishes.html"> Local Dishes</a></li>
+                                    <li><a href="intercontinentaldishes.html">Intercontinental Dishes</a></li>
+                                    <li><a href="desserts.html">Desserts</a></li>
+                                    <li><a href="drinks.html">Drinks</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="gallery.html">GALLERY</a></li>
+                        <li><a href="reservation.html">RESERVATION</a></li>
+                        <li>
+                            <a href="contact.html">CONTACT US</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        <div>
+    </header>
+    <!-- End of Mobile -->
+   
     <section>
         <div>
             <div class="coverPix">
@@ -192,5 +242,6 @@
             </div>
         </div>
     </footer>
+    <script src="js/desserts.js"></script>
 </body>
 </html>

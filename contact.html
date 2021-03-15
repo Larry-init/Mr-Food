@@ -7,10 +7,10 @@
     <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.10.2/css/all.css">
     <link rel="stylesheet" href="css/contact.css">
     
-    <title>Mr Food | Reservation</title>
+    <title>Mr Food | Contact</title>
 </head>
 <body>
-    <header>
+    <header class="desktop">
         <div>
             <div class="menu">
                 <div class="container">
@@ -31,12 +31,11 @@
                                 </div>
                             </li>
                             <li><a href="gallery.html">GALLERY</a></li>
-                            <li><a href="reservation.html"><span>RESERVATION</span></a></li>
-                            <li><a href="blog.html">BLOG</a></li>
+                            <li><a href="reservation.html">RESERVATION</a></li>
                             <li class="openMenu"><a href="more.html">MORE <i class="fas fa-chevron-down"></i></a>
                                 <div class="dropdown">
                                     <ul class="menulist">
-                                        <li><a href="">Contact Us</a></li>
+                                        <li><a href=""><span> Contact Us </span></a></li>
                                     </ul>
                                 </div>
                         </li>
@@ -46,6 +45,55 @@
             </div>
         <div>
     </header>
+     <!-- Mobile version -->
+     <header class="mobile">
+        <div class="fixed">
+            <div class="menu">
+                <div class="container">
+                    <div class="logo"><img src="images/mrfood.png" alt=""></div>
+                    <div class="show">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                    <div class="noshow times">
+                        <i class="fas fa-times"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="container menu">
+                <div class="noList">
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li class="openMenu">
+                            <div class="flexMe">
+                                <div>
+                                    <a href="menu.html">MENU</a>
+                                </div>
+                                <div class="drop">
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                            </div>
+                            <div class="doNotDrop">
+                                <ul class="menulist">
+                                    <li><a href="localdishes.html"> Local Dishes</a></li>
+                                    <li><a href="intercontinentaldishes.html">Intercontinental Dishes</a></li>
+                                    <li><a href="desserts.html">Desserts</a></li>
+                                    <li><a href="drinks.html">Drinks</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="gallery.html">GALLERY</a></li>
+                        <li><a href="reservation.html">RESERVATION</a></li>
+                        <li>
+                            <a href="contact.html"><span>CONTACT US</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        <div>
+    </header>
+    <!-- End of Mobile -->
+   
     <section>
         <div>
             <div class="container coverPix">
@@ -75,6 +123,26 @@
     <section>
         <div>
             <div id="map"></div>
+        </div>
+    </section>
+    <section>
+        <div class="container details">
+            <div class="touch">
+                <h1>Get in touch</h1>
+                <p>Mr Food is not only situated at the heart of the city where a nice meal would be priority but also but also encourages long range delivery services to you across the country.</p>
+                <br>
+                <p>Our intentions are very clear. We bring home to you from the comfort of our indoor restaurant or all the way to the confines of your room.</p>
+            </div>
+            <div>
+                <form action="">
+                    <input type="text" placeholder="Your Name">
+                    <input type="number" placeholder="Phone number">
+                    <input type="email" placeholder="Email">
+                    <br>
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
         </div>
     </section>
     <footer>

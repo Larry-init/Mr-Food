@@ -21,6 +21,9 @@ body {
     margin: auto;
     overflow: hidden;
 }
+.mobile {
+    display: none;
+}
 .menu {
     font-size: 12px;
     padding: 20px 0;
@@ -159,7 +162,7 @@ form textarea {
 }
 @media(max-width: 1200px){
     .container{
-        width: 80%;
+        width: 100%;
     }
     .menu .container {
         padding-left: 10%;
@@ -168,6 +171,66 @@ form textarea {
     }
 }
 @media(max-width: 700px){
+    .desktop {
+        display: none;
+    }
+    .mobile {
+        display: contents;
+    }
+    .menu .container {
+        flex-direction: row;
+    }
+    .menu .container {
+        display: flex;
+        padding-left: 0;
+    }
+    .menu {
+        font-size: 12px;
+        padding: 0;
+    }
+    .logo {
+        padding: 14px 18px;
+    }
+    .logo img{
+        height: 14px;
+        width: auto;
+    }
+    .openMenu .dropdown {
+        opacity: 1;
+    }
+    .doNotDrop {
+        display: none;
+    }
+    .dropdown {
+        margin-top:20px;
+        position: static;
+        background: rgba(0, 0, 0, 0.8);
+        color: #fff;
+        display: contents;
+    }
+    .flexMe {
+        display: flex;
+        justify-content: space-between;
+    }
+    .show {
+        margin-top: 10px;
+        margin-right: 20px;
+    }
+    .noshow {
+        display: none;
+    }
+    .noList {
+        display: none;
+        height: 0;
+    }
+    .list ul {
+        flex-direction: column;
+        background-color: #343434;
+    }
+    .menu i {
+        color: #fff;
+    }
+
     .footer {
         justify-content: center;
         text-align: center;

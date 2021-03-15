@@ -21,6 +21,9 @@ body {
     margin: auto;
     overflow: hidden;
 }
+.mobile {
+    display: none;
+}
 .menu {
     font-size: 12px;
     padding: 20px 0;
@@ -107,6 +110,36 @@ ul.menulist {
     margin: 40px 0;
 }
 
+
+/* contact */
+.details {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px auto 30px auto;
+}
+.touch {
+    padding: 0 100px 0 0;
+    color: #343434;
+}
+form {
+    background-color: rgba(225, 225, 225, 0.7);
+}
+form input, textarea {
+    border: none;
+    outline: none;
+    padding: 10px 30px;
+    margin: 20px; 
+}
+form button {
+    border: none;
+    outline: none;
+    padding: 10px 30px;
+    margin: 20px;
+    background-color: #ff8400;
+    color: white;
+
+}
+
 /* Map */
 #map {
     height: 500px;
@@ -131,7 +164,7 @@ ul.menulist {
 }
 @media(max-width: 1200px){
     .container{
-        width: 80%;
+        width: 100%;
     }
     .menu .container {
         padding-left: 10%;
@@ -140,6 +173,66 @@ ul.menulist {
     }
 }
 @media(max-width: 700px){
+    .desktop {
+        display: none;
+    }
+    .mobile {
+        display: contents;
+    }
+    .menu .container {
+        flex-direction: row;
+    }
+    .menu .container {
+        display: flex;
+        padding-left: 0;
+    }
+    .menu {
+        font-size: 12px;
+        padding: 0;
+    }
+    .logo {
+        padding: 14px 18px;
+    }
+    .logo img{
+        height: 14px;
+        width: auto;
+    }
+    .openMenu .dropdown {
+        opacity: 1;
+    }
+    .doNotDrop {
+        display: none;
+    }
+    .dropdown {
+        margin-top:20px;
+        position: static;
+        background: rgba(0, 0, 0, 0.8);
+        color: #fff;
+        display: contents;
+    }
+    .flexMe {
+        display: flex;
+        justify-content: space-between;
+    }
+    .show {
+        margin-top: 10px;
+        margin-right: 20px;
+    }
+    .noshow {
+        display: none;
+    }
+    .noList {
+        display: none;
+        height: 0;
+    }
+    .list ul {
+        flex-direction: column;
+        background-color: #343434;
+    }
+    .menu i {
+        color: #fff;
+    }
+
     .footer {
         justify-content: center;
         text-align: center;
