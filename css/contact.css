@@ -116,13 +116,12 @@ ul.menulist {
     display: flex;
     justify-content: space-between;
     margin: 30px auto 30px auto;
+    padding:30px 0;
+    background-color: rgba(225, 225, 225, 0.7);
 }
 .touch {
     padding: 0 100px 0 0;
     color: #343434;
-}
-form {
-    background-color: rgba(225, 225, 225, 0.7);
 }
 form input, textarea {
     border: none;
@@ -190,6 +189,10 @@ form button {
         font-size: 12px;
         padding: 0;
     }
+    .fixed {
+        position: sticky;
+        top: 0;
+    }
     .logo {
         padding: 14px 18px;
     }
@@ -233,6 +236,19 @@ form button {
         color: #fff;
     }
 
+    /* body review */
+    .cont {
+        flex-direction: column;
+    }
+    .details {
+        flex-direction: column;
+    }
+    .form button {
+        margin: auto;
+    }
+    form input, textarea {
+        width: 90%;
+    }
     .footer {
         justify-content: center;
         text-align: center;
@@ -240,5 +256,8 @@ form button {
     }
     .footer .about {
         padding: 20px 0px;
+    }
+    .footer {
+        flex-direction: column;
     }
 }

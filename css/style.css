@@ -50,6 +50,9 @@ ul.menulist {
 .list span {
     color: #ff8400;
 }
+.recd span {
+    float: right;
+}
 .head {
     position: relative;
 }
@@ -428,6 +431,9 @@ ul.menulist {
 @media(max-width: 700px){
     .desktop {
         display: none;
+    }
+    .mobile {
+        display: contents;
     }
     .list ul {
         flex-direction: column;

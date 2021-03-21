@@ -224,7 +224,10 @@ ul.menulist {
     .menu i {
         color: #fff;
     }
-
+    .fixed {
+        position: sticky;
+        top: 0;
+    }
     .displayPix img {
         height: 250px;
         width: 100%;
@@ -236,10 +239,20 @@ ul.menulist {
         width: 60%;
         margin: auto;
     }
+    .cost {
+        flex-direction: column;
+    }
+    .costWidth {
+        width: 90%;
+        margin-bottom: 10px;
+    }
     .footer {
         justify-content: center;
         text-align: center;
         align-items:center;
+    }
+    .footer {
+        flex-direction: column;
     }
     .footer .about {
         padding: 20px 0px;

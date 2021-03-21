@@ -86,10 +86,10 @@ ul.menulist {
 }
 /* First pix */
 .coverPix {
-    text-align: center;
+    text-align: left;
 }
 .coverPix p {
-    font-family: 'Roboto Mono', monospace;
+    font-family: ;
 }
 .coverPix img {
     width: 100%;
@@ -232,7 +232,7 @@ ul.menulist {
         padding: 0 30px;
     }
 }
-@media(max-width: 700px){
+@media(max-width: 768px){
     .container{
         width: 100%;
     }
@@ -295,6 +295,10 @@ ul.menulist {
     .menu i {
         color: #fff;
     }
+    .fixed {
+        position: sticky;
+        top: 0;
+    }
     .recognitions, .remark, .displayPix, .review, .recd, .recommend, .footer {
         flex-direction: column;
     }
@@ -311,9 +315,29 @@ ul.menulist {
     .chef {
         margin-top: 0;
     }
+    .chef {
+        flex-direction: column;
+    }
+    .chef .cont {
+        width: 100%;
+        margin: auto;
+    }
+    .chef img {
+        width: 100%;
+    }
+    .invite p, .since {
+        width: 100%;
+    }
     .review {
         width: 60%;
         margin: auto;
+    }
+    .since, .invite, .team, .chef {
+        width: 96%;
+        margin: auto;
+    }
+    .chef {
+        padding-bottom: 30px;
     }
     .footer {
         justify-content: center;

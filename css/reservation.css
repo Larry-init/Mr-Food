@@ -138,7 +138,23 @@ form input {
 }
 form textarea {
     border: none;
+    width: 100%;
 }
+.button {
+    text-align: center;
+}
+form button {
+    padding: 12px 20px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    cursor: pointer; 
+    background-color: #ff8400;
+    color: white;
+}
+ form button:hover {
+     background-color: rgba(0, 0, 0, 0.8);
+ }
 .contains {
     width: 50%;
     margin: auto;
@@ -230,7 +246,25 @@ form textarea {
     .menu i {
         color: #fff;
     }
-
+    .fixed {
+        position: sticky;
+        top: 0;
+    }
+    textarea {
+        width: 100%;
+    }
+    .reserve {
+        width: 90%;
+    }
+    form input, .contains {
+        width: 100%;
+    }
+    .footer, .flexReserve, .namennumber {
+        flex-direction: column;
+    }
+    .flexReserve {
+        text-align: center;
+    }
     .footer {
         justify-content: center;
         text-align: center;

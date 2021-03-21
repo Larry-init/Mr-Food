@@ -125,7 +125,7 @@ ul.menulist {
     width: 100%;
     height: 310px;
 }
-.gallery .first img:hover, .gallery .second img:hover {
+.gallery .first .imghouse:hover, .gallery .second .imghouse:hover {
     filter: brightness(70%);
 }
 .imghouse {
@@ -233,7 +233,17 @@ ul.menulist {
     .menu i {
         color: #fff;
     }
+    .fixed {
+        position: sticky;
+        top: 0;
+    }
 
+    .gallery .first, .gallery .second {
+        flex-direction: column;
+    }
+    .footer {
+        flex-direction: column;
+    }
     .footer {
         justify-content: center;
         text-align: center;

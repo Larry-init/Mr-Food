@@ -106,7 +106,7 @@ ul.menulist {
 .menuImg img {
     text-align: center;
     width: 100%;
-    height: 520px;
+    height: 320px;
     margin:auto;
 }
 .menuImg h1 {
@@ -253,7 +253,13 @@ ul.menulist {
     .menu i {
         color: #fff;
     }
-
+    .fixed {
+        position: sticky;
+        top: 0;
+    }
+    .footer {
+        flex-direction: column;
+    }
     .footer {
         justify-content: center;
         text-align: center;
