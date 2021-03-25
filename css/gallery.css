@@ -191,6 +191,9 @@ ul.menulist {
         font-size: 12px;
         padding: 0;
     }
+    .vid {
+     display: none;
+    }
     .logo {
         padding: 14px 18px;
     }

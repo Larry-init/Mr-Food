@@ -533,9 +533,9 @@ ul.menulist {
     .hero img {
         height: 300px;
     }
-    .ad {
-        width: 100%;
-        height: 250px;
+    .add {
+        padding-right: 10%;
+
     }
 
     .recognitions, .remark, .displayPix, .review, .recd, .recommend, .footer {
@@ -575,6 +575,9 @@ ul.menulist {
     }
     .subOne, .subTwo {
         padding: 10px;
+    }
+    .subOne {
+        text-align: center;
     }
     .footer {
         justify-content: center;
