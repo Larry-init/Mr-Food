@@ -250,6 +250,7 @@ ul.menulist {
         top: 0;
     }
     .footer {
+        font-size: 12px;
         flex-direction: column;
     }
     .footer {
@@ -258,6 +259,7 @@ ul.menulist {
         align-items:center;
     }
     .footer .about {
+        width: 100%;
         padding: 20px 0px;
     }
 }

@@ -340,11 +340,13 @@ ul.menulist {
         padding-bottom: 30px;
     }
     .footer {
+        font-size: 12px;
         justify-content: center;
         text-align: center;
         align-items:center;
     }
     .footer .about {
+        width: 100%;
         padding: 20px 0px;
     }
 }

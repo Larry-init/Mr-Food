@@ -247,14 +247,14 @@ ul.menulist {
         margin-bottom: 10px;
     }
     .footer {
+        font-size: 12px;
         justify-content: center;
         text-align: center;
         align-items:center;
-    }
-    .footer {
         flex-direction: column;
     }
     .footer .about {
+        width: 100%;
         padding: 20px 0px;
     }
 }
