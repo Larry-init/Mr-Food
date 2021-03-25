@@ -409,6 +409,7 @@ ul.menulist {
         flex-direction: column;
         margin:auto;
     }
+    
     .recd {
         display: flex;
         flex-direction: column;
@@ -435,13 +436,88 @@ ul.menulist {
     .mobile {
         display: contents;
     }
+    .menu {
+        background-color: #343434;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .menu .container {
+        flex-direction: row;
+        justify-content: space-between;;
+    }
+    .list ul {
+        flex-direction: column;
+        background-color: #343434;
+    }
+    .heroImg {
+        position: relative;
+    }
+    .display {
+        position: absolute;
+    }
+
+    .menu .container {
+        flex-direction: row;
+    }
+    .menu .container {
+        display: flex;
+        padding-left: 0;
+    }
+    .menu {
+        position: static;
+        font-size: 12px;
+        padding: 0;
+    }
+    .fixed {
+        position:sticky;
+        top: 0;
+        z-index: 4;
+    }
+    .logo {
+        padding: 14px 18px;
+    }
+    .logo img{
+        height: 14px;
+        width: auto;
+    }
+    .openMenu .dropdown {
+        opacity: 1;
+    }
+    .doNotDrop {
+        display: none;
+    }
+    .dropdown {
+        margin-top:20px;
+        position: static;
+        background: rgba(0, 0, 0, 0.8);
+        color: #fff;
+        display: contents;
+    }
+    .flexMe {
+        display: flex;
+        justify-content: space-between;
+    }
+    .show {
+        margin-top: 10px;
+        margin-right: 20px;
+        color: white;
+    }
+    .noshow {
+        display: none;
+    }
+    .noList {
+        display: none;
+        height: 0;
+    }
     .list ul {
         flex-direction: column;
         background-color: #343434;
     }
     .menu i {
-        color:rgba(255,132,0, 0.8);
+        color: #fff;
     }
+
     .recognitions, .remark, .displayPix, .review, .recd, .recommend, .footer {
         flex-direction: column;
     }
